@@ -3,27 +3,44 @@
 " John Arundel, Bitfield Consulting john@bitfieldconsulting.com
 let g:colors_name="gitgo"
 
-hi Normal               ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi Number               ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi Special              ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi String               ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi goTypeConstructor    ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi Identifier           ctermfg=252 guifg=#3a2a2e guibg=#fafafa
-hi Constant             ctermfg=135 guifg=#0f67cb guibg=#fafafa
-hi Comment              ctermfg=59 guifg=#787878 guibg=#fafafa
-hi Boolean              ctermfg=69 guifg=#618dfa guibg=#fafafa
-hi goPredefinedIdentifiers ctermfg=69 guifg=#0f67c1 guibg=#fafafa
-hi Function             ctermfg=69 guifg=#6c4bbf guibg=#fafafa
-hi goMethodCall         ctermfg=69 guifg=#0f67cb guibg=#fafafa
-hi goFunctionCall       ctermfg=69 guifg=#0f67cb guibg=#fafafa
-hi goFormatSpecifier    ctermfg=69 guifg=#618dfa guibg=#fafafa
-hi keyword              ctermfg=9 guifg=#0f67cb gui=none guibg=#fafafa
-hi Statement            ctermfg=9 guifg=#d25e3b gui=none guibg=#fafafa
-hi PreProc              ctermfg=9 guifg=#d25e3b gui=none guibg=#fafafa
-hi Type                 ctermfg=166 guifg=#de6125 gui=none guibg=#fafafa
-hi goSimpleArguments    ctermfg=166 guifg=#3a2a2e guibg=#fafafa
-hi goArgumentName       ctermfg=166 guifg=#de6125 guibg=#fafafa
-hi goArgumentType       ctermfg=166 guifg=#de6125 guibg=#fafafa
+
+
+hi Normal               ctermfg=249
+hi Number               ctermfg=197
+hi Special              ctermfg=226
+hi String               ctermfg=87
+hi goTypeConstructor    ctermfg=248
+hi Identifier           ctermfg=249
+hi Constant             ctermfg=230
+hi Comment              ctermfg=59
+hi Boolean              ctermfg=87
+hi goPredefinedIdentifiers ctermfg=87
+hi Function             ctermfg=71
+hi goMethodCall         ctermfg=202
+hi goFunctionCall       ctermfg=251
+hi goFormatSpecifier    ctermfg=178
+hi keyword              ctermfg=71
+hi Statement            ctermfg=197
+hi PreProc              ctermfg=226
+hi Type                 ctermfg=172
+hi goSimpleArguments    ctermfg=166
+hi goArgumentName       ctermfg=226
+hi goArgumentType       ctermfg=214
+
+" styling++
+
+highlight keyword cterm=none
+highlight Normal cterm=none
+highlight Number cterm=bold
+highlight goFormatSpecifier cterm=bold
+highlight Type cterm=none,bold
+highlight goTypeConstructor cterm=bold
+highlight Statement cterm=bold
+highlight Identifier cterm=bold
+hi Function cterm=bold
+hi goPredefinedIdentifiers cterm=bold
+hi boolean cterm=bold
+hi goFunctionCall cterm=bold
 
 " complete menu
 hi Pmenu                ctermfg=81  ctermbg=235 guibg=#ccccff
